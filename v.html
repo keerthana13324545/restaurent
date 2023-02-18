@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>v</title>
+        <script src="https://kit.fontawesome.com/841afaacdb.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .header{
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Sofia',sans-serif;
+        background:linear-gradient(rgb(8, 223, 238),rgb(254, 166, 4));
+        -webkit-background-clip:text;
+        -webkit-text-fill-color: transparent;
+    }
+    .topic{
+        background:linear-gradient(green,yellow);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+    }
+    .container{
+        padding: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        transform: translateX(0px);
+        transition: 1.1s all;
+        cursor: pointer;
+       
+    }
+    .cards{
+        background:linear-gradient(green,yellow);
+        margin: 45px;
+        width: 300px;
+        border-radius: 0.4rem;
+        
+    }
+    .cards:hover{
+        box-shadow: 6px 6px 40px 10px white;
+        transform: translateX(20px);
+    }
+    .card-img img{
+        width: 300px;
+        height: 300px;
+        border-radius: 10px 10px 0px 0px;
+
+    }
+    .card-body h1{
+        text-align: center;
+    }
+    .card-body p{
+        font-size: 20px;
+        text-align: justify;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer button{
+        width:150px;
+        background: black;
+        color: white;
+        border-radius: 18px;
+        border: 2px solid black;
+        padding: 6px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 2s;
+    }
+
+
+
+
+
+
+
+
+@media screen and (min-width:250px) and (max-width:350px){
+    .container{
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        transform: translateX(0px);
+        transition: 1.1s all;
+        cursor: pointer;
+       
+    }
+    .cards{
+        background:linear-gradient(green,yellow);
+        margin: 30px;
+        width: 300px;
+        border-radius: 0.4rem;
+        
+    }
+    .card-img img{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px 10px 0px 0px;
+
+    }
+ }
+ @media screen and (min-width:300px) and (max-width:370px){
+    .container{
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        transform: translateX(0px);
+        transition: 1.1s all;
+        cursor: pointer;
+       
+    }
+    .cards{
+       margin-left:5%;
+        background:linear-gradient(green,yellow);
+        width: 300px;
+        border-radius: 0.4rem;
+        
+    }
+    .card-img img{
+        width: 250px;
+        height: 250px;
+        border-radius: 10px 10px 0px 0px;
+
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+    <div class="header">
+        <h1>Veg Virundhu</h1>
+    </div>
+    <div class="topic">
+        <h2>Breakfast</h2>
+    </div>
+    <div class="container">
+        <div class="cards">
+            <div class="card-img">
+                <img  src="ph/idli.jpg">
+            </div>
+            <div class="card-body">
+                <h1>Idli</h1>
+                <p>
+                    Idli is a steamed rice-cake 
+                    prepared with fermented batter 
+                    or rice and black gram. 
+                </p>
+            </div>
+                <div class="footer">
+                  <button>Rs.30</button>
+                </div>
+        </div>
+        <div class="cards">
+            <div class="card-img">
+                <img  src="ph/disa.jpg">
+            </div>
+            <div class="card-body">
+                <h1> Dosa</h1>
+                <p>
+                    Dosai is prepared from a fermented batter with sambar or chutney.  
+                </p>
+            </div>
+                <div class="footer">
+                  <button>Rs.40</button>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card-img">
+                <img  src="ph/vada.jpg">
+            </div>
+            <div class="card-body">
+                <h1>Vadai</h1>
+                <p>
+                    Vadai is based on the 
+                    ingredients used and served along with idlis and pongal and sambar,chutney.
+               </p>
+            </div>
+                <div class="footer">
+                  <button>Rs.20</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="cards">
+            <div class="card-img">
+                <img  src="ph/venponga.jpg">
+            </div>
+            <div class="card-body">
+                <h1>Pongal</h1>
+                <p>
+                    Pongal is a traditional cuisine where rice is cooked 
+                    in a matki with water and milk. The word directly translates to the 
+                    action of boiling over the container due to the starch.
+                </p>
+            </div>
+                <div class="footer">
+                  <button>Rs.30</button>
+              </div>
+        </div>
+        <div class="cards">
+            <div class="card-img">
+                <img  src="ph/pulisatham.jpg">
+            </div>
+            <div class="card-body">
+                <h1>Pulisatham</h1>
+                <p>
+                        Pulisadam ,an instant tamarindrice made with a paste 
+                        made using raw termind red chilli 
+                        along with spcies.
+                </p>
+            </div>
+                <div class="footer">
+                  <button>Rs.20</button>
+            </div>
+         </div>
+         <div class="cards">
+            <div class="card-img">
+                <img  src="ph/puliyotharai.jpg">
+            </div>
+            <div class="card-body">
+                <h1>puliyotharai</h1>
+                <p>
+                    This is most famous veg rice in tamilnadu.
+                    It's prepared easily.The ingredents are termaric powder.
+                </p>
+            </div>
+                <div class="footer">
+                  <button>Rs.20</button>
+               </div>
+         </div>
+    </div>     
+    <div class="container">
+         <div class="cards">
+            <div class="card-img">
+                <img  src="ph/card.jpg">
+            </div>
+            <div class="card-body">
+                <h1>Curd Rice</h1>
+                <p>
+                  Curd rice is prepared for milk.
+                  Curd mixed with white rice and different kinds
+                  of fruits.
+                </p>
+            </div>
+                <div class="footer">
+                  <button>Rs.10</button>
+               </div>
+        </div>       
+        
+           <div class="cards">
+                <div class="card-img">
+                    <img  src="ph/Paruppu-Rasam.jpg">
+                </div>
+                <div class="card-body">
+                    <h1>Paruppu Rasam</h1>
+                    <p>
+                      Paruppu rasam is tastey,watery,mild spicy receipe made
+                      with cooked & mashed dal,flavored with tomato,rasam powder.
+                    
+                    </p>
+                </div>
+                    <div class="footer">
+                      <button>Rs.10</button>
+                   </div>
+            </div>
+           <div class="cards">
+                    <div class="card-img">
+                        <img  src="ph/thakkali rasam.jpg">
+                    </div>
+                    <div class="card-body">
+                        <h1>Tomato Rasam</h1>
+                        <p>
+                          Tomato rasam is spicy is called tomato soup.
+                          It's prepared for tomato with termaric powder
+                          and tomatos.
+                        </p>
+                    </div>
+                        <div class="footer">
+                          <button>Rs.10</button>
+                     </div> 
+            </div> 
+        </div>        
+            <div class="container">
+                <div class="cards">
+                    <div class="card-img">
+                        <img  src="ph/upma.jpg">
+                    </div>
+                    <div class="card-body">
+                        <h1>Upma</h1>
+                        <p>
+                            Upma made by first lightly dry rosting semolina.
+                            It's along with chutney.
+                       </p>
+                    </div>
+                        <div class="footer">
+                          <button>Rs.30</button>
+                       </div>
+                </div>
+            </div>
+      
+
+</body>
+</html>

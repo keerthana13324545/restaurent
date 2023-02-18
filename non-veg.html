@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>v</title>
+        <script src="https://kit.fontawesome.com/841afaacdb.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .header{
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Sofia',sans-serif;
+        background:linear-gradient(red,yellow);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color: transparent;
+    }
+    .container{
+        padding: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        transform: translateX(0px);
+        transition: 1.1s all;
+        cursor: pointer;
+       
+    }
+    .cards{
+        background:linear-gradient(blue,red);
+        margin: 45px;
+        width: 300px;
+        border-radius: 0.4rem;
+        
+    }
+    .cards:hover{
+        box-shadow: 6px 6px 40px 10px white;
+        transform: translateX(20px);
+    }
+    .card-img img{
+        width: 300px;
+        height: 300px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .card-body h1{
+        text-align: center;
+    }
+    .card-body p{
+        font-size: 20px;
+        text-align: justify;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer button{
+        width:150px;
+        background: black;
+        color: white;
+        border-radius: 18px;
+        border: 2px solid black;
+        padding: 6px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 2s;
+    }
+
+
+
+
+
+    @media screen and (min-width:250px) and (max-width:350px){
+    .container{
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        transform: translateX(0px);
+        transition: 1.1s all;
+        cursor: pointer;
+       
+    }
+    .cards{
+        background:linear-gradient(green,yellow);
+        margin: 30px;
+        width: 300px;
+        border-radius: 0.4rem;
+        
+    }
+    .card-img img{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px 10px 0px 0px;
+
+    }
+ }
+ @media screen and (min-width:300px) and (max-width:370px){
+    .container{
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        transform: translateX(0px);
+        transition: 1.1s all;
+        cursor: pointer;
+       
+    }
+    .cards{
+       margin-left:5%;
+        background:linear-gradient(green,yellow);
+        width: 300px;
+        border-radius: 0.4rem;
+        
+    }
+    .card-img img{
+        width: 250px;
+        height: 250px;
+        border-radius: 10px 10px 0px 0px;
+
+    }
+
+
+</style>
+<body>
+    <div class="header">
+        <h1>NON-VEG</h1>
+    </div>
+
+    <div class="container">
+        <div class="cards">
+            <div class="card-img">
+                <img  src="ph/c-65.jpg">
+            </div>
+            <div class="card-body">
+                <h1>chicken65</h1>
+                <p>
+                    Chicken 65 is a spicy, deep-fried chicken dish originating from 
+                    Hotel Buhari, Chennai, India, as an entrée, or quick snack.
+                </p>
+            </div>
+                <div class="footer">
+                  <button>Rs.120</button>
+                </div>
+        </div>
+    
+        <div class="cards">
+             <div class="card-img">
+                 <img  src="ph/chickenbri.jpg">
+            </div>
+            <div class="card-body">
+                 <h1>Chicken Briyani</h1>
+                    <p>
+                        The chicken is marinated with ginger garlic paste along with herbs and spices. As the chicken steams, 
+                        it releases all these flavors into the rice
+                    </p>
+            </div>
+            <div class="footer">
+                    <button>Rs.100</button>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card-img">
+                <img  src="ph/c-paakoda.jpg">
+           </div>
+           <div class="card-body">
+                <h1>Chicken Pakkoda</h1>
+                   <p>
+                    Chicken Pakoda is a popular Indian snack where boneless chicken pieces are marinated with spices,lime juice and then coated with
+                     a mixture of chickpea flour, rice flour and egg.
+                 </p>
+           </div>
+           <div class="footer">
+                   <button>Rs.120</button>
+           </div>
+       </div>
+    </div>   
+    
+
+
+    <div class="container">
+        <div class="cards">
+            <div class="card-img">
+                <img  src="ph/mutton-biryani.jpg">
+            </div>
+            <div class="card-body">
+                <h1>Mutton Briyani</h1>
+                <p>
+                    Mutton biryani is a popular Indian rice dish made using long grain
+                     basmati rice layered with a spicy mutton (goat meat) layer
+               </p>
+            </div>
+                <div class="footer">
+                  <button>Rs.150</button>
+                </div>
+        </div>
+       
+
+        <div class="cards">
+            <div class="card-img">
+                <img  src="ph/chilli.jpg">
+            </div>
+            <div class="card-body">
+                <h1>Cilli Chicken</h1>
+                <p>
+                    Chilli chicken is a popular Indo-Chinese dish of chicken of Hakka Chinese heritage. 
+                    In India, this may include a variety of dry chicken preparations.
+                </p>
+            </div>
+                <div class="footer">
+                  <button>Rs.100</button>
+               </div>
+        </div>
+
+
+        <div class="cards">
+            <div class="card-img">
+                <img  src="ph/egg-fried-rice-recipe.jpg">
+            </div>
+            <div class="card-body">
+                <h1>Egg Fried Rice</h1>
+                <p>
+                    Fried rice is a dish of cooked rice that has been stir-fried in a wok or a frying pan and is 
+                    usually mixed with other ingredients such as eggs, vegetables
+                 </p>
+            </div>
+                <div class="footer">
+                  <button>Rs.70</button>
+               </div>
+        </div>
+   </div>
+
+
+
+
+   <div class="container">
+    <div class="cards">
+        <div class="card-img">
+            <img  src="ph/parotta.jpg">
+        </div>
+        <div class="card-body">
+            <h1>Parotta</h1>
+            <p>
+                For all its fanfare, the Parotta is simply well kneaded refined flour with a 
+                dollop of ghee or oil, coiled and rolled into flaky flatbread.
+            </p>
+        </div>
+            <div class="footer">
+              <button>Rs.50</button>
+            </div>
+    </div>
+   
+    <div class="cards">
+        <div class="card-img">
+            <img  src="ph/ambur.jpg">
+        </div>
+        <div class="card-body">
+            <h1>Ambur Briyani</h1>
+            <p>
+                Ambur biryani is a delightful one-pot meal cooked to perfection along with the aromatic jeera samba rice, mint leaves, coriander leaves and whole spices.
+                
+            </p>
+        </div>
+            <div class="footer">
+              <button>Rs.150</button>
+            </div>
+    </div>
+   
+
+    <div class="cards">
+        <div class="card-img">
+            <img  src="ph/soup.jpg">
+        </div>
+        <div class="card-body">
+            <h1>Mutton Soup</h1>
+            <p>
+                mutton soup is cooked with turmeric, ginger garlic paste.
+                 pepper powder, cumin powder and little garam masala
+            </p>
+        </div>
+            <div class="footer">
+              <button>Rs.50</button>
+            </div>
+    </div>
+ </div>   
+
+   
+
+
+
+
+
+    
+
+</body>
+</html>
