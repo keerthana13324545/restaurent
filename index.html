@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>veg</title>
+        <script src="https://kit.fontawesome.com/841afaacdb.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<style>
+  body{
+       background-image:url("ph/t2.jpg");
+       background-attachment: fixed;
+       background-repeat: no-repeat;
+       /*background-size: cover;*/
+       background-size: 100% 100%; 
+  }
+  nav ul{
+    list-style: none;
+    float: right;
+  }
+  nav ul li{
+    display: inline-block;
+    padding: 9px;
+  }
+  nav li a{
+    text-decoration: none;
+    color: white;
+    margin: left;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Sofia',sans-serif;
+    padding: 20px;
+}
+.header{
+  padding: 5%;
+  text-align: center;
+}
+.header h1{
+    font-family: 'Sofia';
+    font-size: 50px;
+    color: black;
+    text-shadow: 4px 4px 4px rgb(197, 192, 192);
+}
+.header h2{
+    color:  white;
+    font-family: 'Sofia';
+    font-size: 30px;
+    text-shadow:  2px 2px 2px rgb(17, 17, 17);
+  }
+label #btn,
+label #cancel{
+     color: white;
+     font-size: 30px;
+     float: right;
+     line-height: 80px;
+     margin-right: 40px;
+      cursor: pointer;
+      display:none;
+      }
+ #check {
+      display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:300px) and (max-width:900px){
+  body{
+    background-image:url("ph/t2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   /*background-size: cover;*/
+    background-size: 100% 100%;
+    }
+}
+@media (orientation:portrait) and (max-width:500px){
+        nav ul li{
+                display: block;
+        }
+        nav ul li a{
+                font-size: 20px;
+        }
+}
+@media (max-width:800px) {
+               label #btn{
+                       display: block;
+
+               }
+               ul{
+                       position: fixed;
+                       width: 100%;
+                       height: 100vh;
+                       background: black;
+                       top:80px;
+                       left:100%;
+                       text-align: center;
+                       transform: all .5s;
+               }
+               nav ul li{
+                       display: block;
+                       margin: 40px 0;
+                       line-height: 30px;
+
+
+               }
+               nav ul li a{
+                       font-size: 30px;
+               }
+               #check:checked~ul{
+                       left: 0;
+               }
+               #check:checked~label #btn{
+                       display: none;
+               }
+               #check:checked~label #cancel{
+                       display: block;
+               }  
+              
+}
+
+
+
+</style>
+
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check">
+          <i class="fas fa-bars" id="btn"></i>
+          <i class="fas fa-times" id="cancel"></i>
+
+    </label>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="MENU.HTML">MENU</a></li>
+      <li><a href="cook.html">Staff</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+     </ul>
+
+  </nav>
+  <div class="header">
+    <h1>Delicious Tamilnadu Food <h1>
+    <h2>A Recipe Has No Soul.<br><h2>
+     You As Cook Must Bring Soul To The Recipe.</p>
+</div>
+</body>
+
+
+</html>
